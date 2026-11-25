@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тёплый Угол — кофейня и доставка еды</title>
+  <meta name="description" content="Тёплый Угол — кофейня и доставка домашней еды. Свежая выпечка, кофе на вынос и доставка по городу за 40 минут.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Тёплый Угол — на главную">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 8h11v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/>
+            <path d="M15 9h2.5a2.5 2.5 0 0 1 0 5H15"/>
+            <path d="M7 3v2M11 3v2"/>
+          </svg>
+        </span>
+        <span class="logo__text">
+          <strong>Тёплый&nbsp;Угол</strong>
+          <small>кофейня&nbsp;·&nbsp;доставка</small>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <a href="#menu">Меню</a>
+        <a href="#about">О нас</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+        <a class="nav__phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+        <a class="btn btn--sm nav__cta" href="#order">Заказать</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Работаем с 2014 года</p>
+          <h1>Кофе и домашняя еда<br>с доставкой за 40 минут</h1>
+          <p class="lead">
+            Готовим каждое утро: свежая выпечка, сезонные завтраки и кофе
+            на зерне собственной обжарки. Привезём горячим — или забегайте к нам.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="#menu">Смотреть меню</a>
+            <a class="btn btn--ghost" href="#order">Оформить доставку</a>
+          </div>
+          <dl class="stats">
+            <div><dt>4,9</dt><dd>рейтинг гостей</dd></div>
+            <div><dt>40&nbsp;мин</dt><dd>средняя доставка</dd></div>
+            <div><dt>0&nbsp;₽</dt><dd>от&nbsp;1500&nbsp;₽ по городу</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__panel">
+            <svg class="cup" viewBox="0 0 220 220" role="img" aria-label="Чашка кофе с паром">
+              <circle cx="110" cy="110" r="96" fill="#fff" opacity=".55"/>
+              <g stroke="#1B1815" stroke-width="3.4" fill="none" stroke-linecap="round">
+                <path d="M56 96h84v30a30 30 0 0 1-30 30H86a30 30 0 0 1-30-30V96Z" fill="#fff"/>
+                <path d="M140 102h12a14 14 0 0 1 0 28h-12"/>
+                <path d="M78 74c6-6 6-12 0-18M98 74c6-6 6-12 0-18M118 74c6-6 6-12 0-18"/>
+              </g>
+              <ellipse cx="98" cy="170" rx="46" ry="7" fill="#B4451F" opacity=".12"/>
+            </svg>
+            <div class="hero__badge">
+              <strong>Свежая обжарка</strong>
+              <span>зерно недели — Ethiopia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">Меню</p>
+            <h2>Что попробовать сегодня</h2>
+          </div>
+          <p class="section__note">Небольшое меню, которое мы обновляем каждый сезон. Всё готовим сами.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Фильтр меню">
+          <button class="chip is-active" type="button" data-filter="all" aria-pressed="true">Всё</button>
+          <button class="chip" type="button" data-filter="coffee" aria-pressed="false">Кофе</button>
+          <button class="chip" type="button" data-filter="breakfast" aria-pressed="false">Завтраки</button>
+          <button class="chip" type="button" data-filter="lunch" aria-pressed="false">Обед</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="card reveal" data-category="coffee">
+            <div class="card__icon" aria-hidden="true">☕</div>
+            <h3>Капучино</h3>
+            <p>Эспрессо двойной обжарки и мягкое молоко. 250 мл.</p>
+            <div class="card__foot"><span class="price">290&nbsp;₽</span><span class="tag">Хит</span></div>
+          </article>
+
+          <article class="card reveal" data-category="coffee">
+            <div class="card__icon" aria-hidden="true">🧋</div>
+            <h3>Флэт уайт</h3>
+            <p>Плотный, с карамельной ноткой. На выбор зерно или альтернатива. 200 мл.</p>
+            <div class="card__foot"><span class="price">320&nbsp;₽</span><span class="tag">Сезон</span></div>
+          </article>
+
+          <article class="card reveal" data-category="breakfast">
+            <div class="card__icon" aria-hidden="true">🥐</div>
+            <h3>Круассан с миндалём</h3>
+            <p>Слоёное тесто, миндальный крем и лепестки миндаля. Печём в 7:00.</p>
+            <div class="card__foot"><span class="price">260&nbsp;₽</span><span class="tag">Утро</span></div>
+          </article>
+
+          <article class="card reveal" data-category="breakfast">
+            <div class="card__icon" aria-hidden="true">🥑</div>
+            <h3>Тост с авокадо</h3>
+            <p>Ржаной хлеб, авокадо, яйцо пашот, семена и лимонный сок.</p>
+            <div class="card__foot"><span class="price">450&nbsp;₽</span><span class="tag">Веган-опция</span></div>
+          </article>
+
+          <article class="card reveal" data-category="lunch">
+            <div class="card__icon" aria-hidden="true">🥗</div>
+            <h3>Салат с киноа</h3>
+            <p>Киноа, печёные овощи, шпинат, фета и цитрусовая заправка.</p>
+            <div class="card__foot"><span class="price">490&nbsp;₽</span><span class="tag">Лёгкое</span></div>
+          </article>
+
+          <article class="card reveal" data-category="lunch">
+            <div class="card__icon" aria-hidden="true">🍝</div>
+            <h3>Паста с томатами</h3>
+            <p>Спагетти, томаты черри, базилик, пармезан. Готовим 12 минут.</p>
+            <div class="card__foot"><span class="price">560&nbsp;₽</span><span class="tag">Обед</span></div>
+          </article>
+        </div>
+
+        <p class="menu-note reveal">Полное меню — в зале и в приложении доставки. Есть блюда без глютена и лактозы.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--tint" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">О нас</p>
+            <h2>Маленькая кофейня<br>с большим вниманием к деталям</h2>
+          </div>
+          <p class="section__note">
+            Мы начинали с одной кофемашины в 18 м². Сейчас у нас своя обжарка,
+            пекарня и команда из 12 человек.
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature reveal">
+            <span class="feature__num">01</span>
+            <h3>Своя обжарка</h3>
+            <p>Зерно привозим напрямую с ферм и обжариваем малыми партиями каждую неделю.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__num">02</span>
+            <h3>Кухня без полуфабрикатов</h3>
+            <p>Соусы, выпечка и десерты — собственного производства. Состав знаем до грамма.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__num">03</span>
+            <h3>Доставка без сюрпризов</h3>
+            <p>Фиксированное время, термоупаковка и трекинг заказа в SMS. Оплата картой при получении.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DELIVERY -->
+    <section class="section" id="delivery">
+      <div class="container delivery__inner">
+        <div class="reveal">
+          <p class="eyebrow">Доставка</p>
+          <h2>Как это работает</h2>
+          <ol class="steps">
+            <li>
+              <span class="steps__num">1</span>
+              <div><h3>Выбираете блюда</h3><p>В меню на сайте или по телефону — подскажем по составу и аллергенам.</p></div>
+            </li>
+            <li>
+              <span class="steps__num">2</span>
+              <div><h3>Мы готовим сразу</h3><p>Кофе варим к моменту отправки, горячее упаковываем в термобоксы.</p></div>
+            </li>
+            <li>
+              <span class="steps__num">3</span>
+              <div><h3>Курьер у двери</h3><p>В среднем 40 минут по центру. От 1500 ₽ — доставка бесплатно.</p></div>
+            </li>
+          </ol>
+        </div>
+
+        <aside class="info-card reveal">
+          <h3>Зоны и часы</h3>
+          <ul class="info-list">
+            <li><span>Центр</span><strong>40 мин · бесплатно от 1500 ₽</strong></li>
+            <li><span>Заречье</span><strong>50 мин · 149 ₽</strong></li>
+            <li><span>Северный</span><strong>60 мин · 199 ₽</strong></li>
+            <li><span>За городом</span><strong>по согласованию</strong></li>
+          </ul>
+          <hr>
+          <p class="info-time">Ежедневно с&nbsp;8:00 до&nbsp;22:00<br>Приём заказов до&nbsp;21:30</p>
+          <a class="btn btn--ghost btn--wide" href="tel:+74951234567">Позвонить: +7 (495) 123-45-67</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section--tint" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow">Отзывы</p>
+            <h2>Что говорят гости</h2>
+          </div>
+          <p class="section__note">Средняя оценка 4,9 из 5 по 1 240 отзывам на картах и в приложении.</p>
+        </div>
+
+        <div class="reviews">
+          <figure class="review reveal">
+            <blockquote>«Лучший флэт уайт в районе. Заказываю доставку на работу — приезжает горячим, круассаны как из печи».</blockquote>
+            <figcaption><strong>Анна К.</strong><span>гостья с 2019 года</span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <blockquote>«Брали завтраки на всю команду. Всё приехало вовремя, упаковано аккуратно, никто не остался голодным».</blockquote>
+            <figcaption><strong>Дмитрий П.</strong><span>офис в центре</span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <blockquote>«Отдельное спасибо за безглютеновые опции и честные состав и калории в меню».</blockquote>
+            <figcaption><strong>Мария С.</strong><span>постоянная гостья</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER / CONTACTS -->
+    <section class="section" id="contacts">
+      <div class="container contacts__inner">
+        <div class="reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2>Закажите или зайдите в гости</h2>
+          <ul class="contact-list">
+            <li><span>Адрес</span><a href="#contacts">ул. Пушкина, 12 — вход со двора</a></li>
+            <li><span>Телефон</span><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+            <li><span>Почта</span><a href="mailto:hello@teplyugol.ru">hello@teplyugol.ru</a></li>
+            <li><span>Часы</span><p>Ежедневно, 8:00–22:00</p></li>
+          </ul>
+          <div class="map" role="img" aria-label="Схема расположения кофейни: улица Пушкина, 12">
+            <span class="map__pin">Тёплый Угол</span>
+          </div>
+        </div>
+
+        <form class="form reveal" id="order" novalidate>
+          <h3>Оставить заявку</h3>
+          <p class="form__note">Перезвоним в течение 10 минут и подтвердим заказ.</p>
+
+          <label class="field">
+            <span>Имя</span>
+            <input type="text" name="name" id="name" autocomplete="name" placeholder="Как к вам обращаться" required>
+            <em class="field__error" id="nameError" aria-live="polite"></em>
+          </label>
+
+          <label class="field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+            <em class="field__error" id="phoneError" aria-live="polite"></em>
+          </label>
+
+          <label class="field">
+            <span>Комментарий</span>
+            <textarea name="comment" id="comment" rows="3" placeholder="Что заказать и куда привезти"></textarea>
+          </label>
+
+          <div class="hp" aria-hidden="true">
+            <label>Не заполняйте это поле
+              <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </label>
+          </div>
+
+          <button class="btn btn--wide" type="submit" id="submitBtn">Отправить заявку</button>
+          <p class="form__hint">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+          <p class="form__success" id="formSuccess" role="status" hidden>Спасибо! Заявка отправлена — перезвоним в течение 10 минут.</p>
+          <p class="form__error" id="formError" role="alert" hidden></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Кофейня «Тёплый Угол» · ИП Иванова А. С.</p>
+      <nav aria-label="Ссылки в подвале">
+        <a href="#menu">Меню</a>
+        <a href="#delivery">Доставка</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#top">Наверх ↑</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
